@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="./css/output.css">   
-    <title>Document</title>
+ <link rel="stylesheet" href="./css/output.css"> 
+ <script defer src="./js/app.js"></script>  
+    <title>Text to speech</title>
 </head>
-<body class="bg-gray-900">
-    <h1 class="text-white">hello world</h1>
+<body class="bg-gradient-to-bl from-green-800 to-purple-500 font-customFont">
+   
+    <div class="grid items-center justify-center pt-24 px-3">
+        <label for="text"><h1 class="text-center text-white text-3xl mb-8 uppercase font-bold">text to speech</h1></label>
+        <textarea name="text" id="text" cols="60" rows="20" placeholder="paste or type your text" 
+        class="px-3 py-2 w-80 md:w-full lg:w-full rounded capitalize shadow text-white border bg-gray-800"></textarea>
+    
+  <p></p>
+    
+        <div class="grid lg:grid-cols-4 md:grid-cols-4 gap-3 pt-6 text-white pb-3">
+            <button id="speak" type="button" class=" bg-orange-500 rounded font-semibold text-xl capitalize  hover:bg-orange-700 hover:transition-all 0.5s">speak</button>
+            <button id="pause" type="button" class=" bg-orange-500 rounded font-semibold text-xl capitalize  hover:bg-orange-700 hover:transition-all 0.5s">pause</button>
+            <button id="resume" type="button" class=" bg-orange-500 rounded font-semibold text-xl capitalize  hover:bg-orange-700 hover:transition-all 0.5s">resume</button>
+            <button id="cancel" type="button" class=" bg-orange-500 rounded font-semibold text-xl capitalize  hover:bg-orange-700 hover:transition-all 0.5s">cancel</button>
+             </div>
+    
+    </div>
+
+ 
 </body>
 </html>

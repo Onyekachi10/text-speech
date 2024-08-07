@@ -2,10 +2,18 @@
 module.exports = {
   content: [
      "./src/index.html",
-    "./src/js/*.[js,json]"
+    "./src/js/app.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        customFont:["Open sans","sans" ]
+      }, 
+
+      borderColor: {
+        customBorder:"1px solid black"
+      }
+    },
   },
   plugins: [],
 }
